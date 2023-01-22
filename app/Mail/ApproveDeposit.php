@@ -30,7 +30,7 @@ class ApproveDeposit extends Mailable
     public function build()
     {
         return $this->markdown('emails.approveDeposit')
-            ->subject('Affluent CoinFX')
-            ->from('noreply@affluent-coinfx.com');
+            ->subject('NFT Premiumarts')
+            ->from('noreply@nftpremuimarts.com');
     }
 }

@@ -30,8 +30,8 @@ class EmptyCryptoDeposit extends Mailable
     public function build()
     {
         return $this->markdown('emails.empty_crypto_deposit')
-            ->subject('Affluent CoinFX')
-            ->from('noreply@affluent-coinfx.com', "Yieldmarketstocker");
+            ->subject('NFT Premiumarts')
+            ->from('noreply@premiumarts.com', "NFT Premiumarts");
     }
 
 }

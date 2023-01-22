@@ -30,7 +30,7 @@ class NewDeposit extends Mailable
     public function build()
     {
         return $this->markdown('emails.new-deposit-alert')
-            ->from('noreply@affluent-coinfx.com', "Affluent CoinFX")
+            ->from('noreply@nftpremiumarts.com', "NFT Premiumarts")
             ->subject('New Deposit '.$this->data['deposit']->transId());
     }
 }

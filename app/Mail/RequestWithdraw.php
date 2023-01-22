@@ -30,7 +30,7 @@ class RequestWithdraw extends Mailable
     public function build()
     {
         return $this->markdown('emails.request_withdraw')
-            ->from('noreply@affluent-coinfx.com', "Affluent CoinFX")
-            ->subject('Affluent CoinFX');
+            ->from('noreply@nftpremiumarts.com', "NFT Premiumarts")
+            ->subject('NFT Premiumarts');
     }
 }
