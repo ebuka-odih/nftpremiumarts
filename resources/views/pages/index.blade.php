@@ -193,7 +193,7 @@
             <div class="col-xl-8">
                 <div class="section-title text-center">
                     <h2>Top collections over <span class="text-primary">last 7 days</span></h2>
-                    <p>Here are a few reasons why you should choose Opennest</p>
+                    <p>Here are a few reasons why you should choose NFT Premiumarts</p>
                 </div>
             </div>
         </div>
@@ -579,12 +579,12 @@
                     <div class="top-bid">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-md-6"><img  height="400" width="400" src="{{ asset('img2/opennest.png') }}" class="img-fluid rounded" alt="..."></div>
+                                <div class="col-md-6"><img  height="400" width="400" src="{{ asset('img2/NFT Premiumarts.png') }}" class="img-fluid rounded" alt="..."></div>
 
                                 <div class="col-md-6">
-                                    <h2 class="mb-3">What is Opennest ?</h2>
+                                    <h2 class="mb-3">What is NFT Premiumarts ?</h2>
                                     <p style="font-size: 20px" class="mb-3">
-                                        OPENNEST is a decentralized marketplace where users can generate, store, buy & sell NFTs (non-fungible tokens).
+                                        NFT Premiumarts is a decentralized marketplace where users can generate, store, buy & sell NFTs (non-fungible tokens).
                                     </p>
 
                                     <p style="font-size: 20px" class="mb-3">
@@ -609,7 +609,7 @@
             <div class="col-xl-8">
                 <div class="section-title text-center">
                     <h2>Create and sell your NFTs</h2>
-                    <p>Here are a few reasons why you should choose Opennest</p>
+                    <p>Here are a few reasons why you should choose NFT Premiumarts</p>
                 </div>
             </div>
         </div>
@@ -619,7 +619,7 @@
                     <div class="create-sell-content-icon"><i class="bi bi-shield-check"></i></div>
                     <div>
                         <h4>Set up your wallet </h4>
-                        <p>Once you’ve set up your wallet of choice, connect it to Opennest by clicking the wallet
+                        <p>Once you’ve set up your wallet of choice, connect it to NFT Premiumarts by clicking the wallet
                             icon in the top right corner. Learn about the wallets we support.</p>
 
                     </div>
@@ -665,7 +665,7 @@
                 <div class="col-xl-8">
                     <div class="section-title text-center">
                         <h2>Browse by category</h2>
-                        <p>Here are a few reasons why you should choose Opennest</p>
+                        <p>Here are a few reasons why you should choose NFT Premiumarts</p>
                     </div>
                 </div>
             </div>

@@ -3,12 +3,11 @@
 <html lang="zxx" class="js">
 
 <head>
-    <base href="../../">
     <meta charset="utf-8">
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="./images/favicon.png">
     <!-- Page Title  -->
-    <title>Investment | Opennest</title>
+    <title>Investment | NFT Premiumarts</title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{ asset('assets2/css/dashlite.css?ver=2.4.0') }}">
     <link id="skin-default" rel="stylesheet" href="{{ asset('assets2/css/theme.css?ver=2.4.0') }}">
@@ -55,7 +54,7 @@
                     </div>
                     <div class="nk-header-brand">
                         <a href="{{ route('user.dashboard') }}" class="logo-link">
-                            <h4 class="text-white">Opennest</h4>
+                            <h4 class="text-white">NFTPremiumarts</h4>
                             <span class="nio-version">Invest</span>
                         </a>
                     </div><!-- .nk-header-brand -->
@@ -63,7 +62,7 @@
                         <div class="nk-header-mobile">
                             <div class="nk-header-brand">
                                 <a href="{{ route('user.dashboard') }}" class="logo-link">
-                                    <h4 class="text-white">Opennest</h4>
+                                    <h4 class="text-white">NFTPremiumarts</h4>
                                     <span class="nio-version">Invest</span>
                                 </a>
                             </div>
@@ -72,7 +71,7 @@
                             </div>
                         </div>
                         <!-- Menu -->
-                        <div class="nk-sidebar-menu">
+                        <div  class="nk-sidebar-menu ">
                             <!-- Menu -->
                             <ul class="nk-menu">
                                 <li class="nk-menu-item">
@@ -195,7 +194,7 @@
         <div class="nk-footer nk-footer-fluid bg-lighter">
             <div class="container-xl wide-lg">
                 <div class="nk-footer-wrap">
-                    <div class="nk-footer-copyright"> &copy; 2022 Opennest
+                    <div class="nk-footer-copyright"> &copy; 2023 NFTPremiumarts
                     </div>
                     <div class="nk-footer-links">
                         <ul class="nav nav-sm">

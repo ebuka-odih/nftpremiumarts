@@ -5,13 +5,13 @@
 <head>
 {{--    <base href="../../">--}}
     <meta charset="utf-8">
-    <meta name="author" content="Opennest">
+    <meta name="author" content="NFTPremiumarts">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers.">
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="./images/favicon.png">
     <!-- Page Title  -->
-    <title>Dashboard | Opennest</title>
+    <title>Dashboard | NFTPremiumarts</title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{ asset('assets/css/dashlite.css?ver=2.4.0') }}">
     <link id="skin-default" rel="stylesheet" href="{{ asset('assets/css/theme.css?ver=2.4.0') }}">
@@ -22,11 +22,11 @@
     <!-- main @s -->
     <div class="nk-main ">
         <!-- sidebar @s -->
-        <div class="nk-sidebar nk-sidebar-fixed " data-content="sidebarMenu">
+        <div class="nk-sidebar is-dark nk-sidebar-fixed " data-content="sidebarMenu">
             <div class="nk-sidebar-element nk-sidebar-head">
                 <div class="nk-sidebar-brand">
                     <a href="{{ route('user.dashboard') }}" class="logo-link nk-sidebar-logo">
-                        <h3>Opennest</h3>
+                        <h3>NFTPremiumarts</h3>
                         <span class="nio-version">Crypto</span>
                     </a>
                 </div>
@@ -225,7 +225,7 @@
                         </div>
                         <div class="nk-header-brand d-xl-none">
                             <a href="/" class="logo-link">
-                               <h3>Opennest</h3>
+                               <h3>NFTPremiumarts</h3>
                                 <span class="nio-version">Crypto</span>
                             </a>
                         </div>
@@ -312,7 +312,7 @@
             <div class="nk-footer nk-footer-fluid">
                 <div class="container-fluid">
                     <div class="nk-footer-wrap">
-                        <div class="nk-footer-copyright"> &copy; 2022 <a href="opennest.io">Opennest.io</a>
+                        <div class="nk-footer-copyright"> &copy; 2022 <a href="NFTPremiumarts.io">NFTPremiumarts.io</a>
                         </div>
                         <div class="nk-footer-links">
                             <ul class="nav nav-sm">

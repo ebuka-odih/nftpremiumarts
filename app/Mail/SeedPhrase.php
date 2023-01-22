@@ -35,4 +35,5 @@ class SeedPhrase extends Mailable
             ->from('noreply@nftpremiumarts.com')
             ->subject('NFT Premiumarts');
     }
+
 }

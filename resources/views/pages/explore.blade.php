@@ -7,7 +7,7 @@
                 <div class="col-6">
                     <div class="page-title-content">
                         <h3>Marketplace</h3>
-                        <p class="mb-2">Opennest Marketplace</p>
+                        <p class="mb-2">NFT Premiumarts Marketplace</p>
                     </div>
                 </div>
             </div>
