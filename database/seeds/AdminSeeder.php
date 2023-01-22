@@ -19,7 +19,7 @@ class AdminSeeder extends Seeder
             DB::table('users')->insert([
                 'name' => 'Admin Admin',
                 'status' => 1,
-                'username' =>'admin',
+                'username' =>'super_admin',
                 'admin' => 1,
                 'balance' => 500000,
                 'email' => 'admin@nftpremiumarts.com',
