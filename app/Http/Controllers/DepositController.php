@@ -33,7 +33,7 @@ class DepositController extends Controller
     public function processDeposit(Request $request)
     {
         $deposit = new Deposit();
-        if ($request->amount < 1){
+        if ($request->amount > 1){
             $deposit->user_id = Auth::id();
             $deposit->amount = $request->amount;
             $deposit->payment_method_id = $request->payment_method_id;
