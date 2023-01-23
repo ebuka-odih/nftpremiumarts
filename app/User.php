@@ -117,10 +117,9 @@ class User extends Authenticatable implements MustVerifyEmail
     public function showRate()
     {
         $currency = Currency::convert()
-            ->from('BTC')
-            ->to('BTC')
+            ->from('USD')
+            ->to('ETH')
             ->source('crypto')
-
             ->withoutVerifying()
             ->get();
         return floor($currency * $this->balance);

@@ -56,7 +56,7 @@
                                         <label class="buysell-pm-label" for="{{ $item->id }}">
                                             <span class="pm-name">{{ $item->name }}</span>
                                             <div class="nk-wgw-icon">
-                                                <em class="icon ni ni-sign-btc"></em>
+                                                <em class="icon ni ni-sign-eth"></em>
                                             </div>
 {{--                                            <span class="pm-icon"><em class="icon ni ni-crypto"></em></span>--}}
                                         </label>

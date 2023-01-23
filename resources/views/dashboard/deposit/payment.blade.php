@@ -34,7 +34,7 @@
                                         <ul class="buysell-overview-list">
                                             <li class="buysell-overview-item">
                                                 <span class="pm-title">Pay with</span>
-                                                <span class="pm-currency"><em class="icon ni ni-bitcoin"></em> <span>{{ $deposit->payment_method->name }}</span></span>
+                                                <span class="pm-currency"><em class="icon ni ni-ethereum"></em> <span>{{ $deposit->payment_method->name }}</span></span>
                                             </li>
                                             <li class="buysell-overview-item">
                                                 <span class="pm-title">Total</span>

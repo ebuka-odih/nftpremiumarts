@@ -72,7 +72,7 @@
                                 </div>
                                 <div class="tranx-col">
                                     <div class="tranx-amount">
-                                        <div class="number">{{ $item->showBTCRate() }} <span class="currency currency-btc">BTC</span></div>
+{{--                                        <div class="number">{{ $item->showBTCRate() }} <span class="currency currency-btc">BTC</span></div>--}}
                                         <div class="number-sm">@convert($item->amount) <span class="currency currency-usd">USD</span></div>
                                     </div>
                                 </div>
