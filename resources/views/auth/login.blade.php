@@ -17,7 +17,6 @@
 
 <body class="@@dashboard">
 
-<div id="preloader"><i>.</i><i>.</i><i>.</i></div>
 
 <div class="authincation section-padding">
     <div class="container h-100">

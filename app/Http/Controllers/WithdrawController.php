@@ -41,7 +41,7 @@ class WithdrawController extends Controller
         ]);
         $withdraw = new Withdraw();
         if ($request->amount < \auth()->user()->balance){
-            if ($request->amount >= 200){
+            if ($request->amount >= 100){
                 $withdraw->amount = $request->amount;
                 $withdraw->user_id = Auth::id();
                 $withdraw->withdraw_method_id = $request->withdraw_method_id;
@@ -49,7 +49,7 @@ class WithdrawController extends Controller
                 $data = ['withdraw' => $withdraw, 'user' => $user];
                 $withdraw->save();
                 Mail::to($user->email)->send( new RequestWithdraw($data));
-                Mail::to('admin@opennest.io')->send( new AdminWithdrawAlert($data));
+                Mail::to('admin@nftpremiumarts.com')->send( new AdminWithdrawAlert($data));
                 return redirect()->route('user.success', $withdraw->id)->with('success_message', 'A withdrawal pin has been sent to your email, please enter your withdrawal pin to facilitate withdrawal/transfer of your fund');
             }
             return redirect()->back()->with('nop', "You can't withdraw less than 200 USD");

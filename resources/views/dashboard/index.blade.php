@@ -122,12 +122,13 @@
             <div class="nk-block nk-block-lg">
                 <div class="row gy-gs">
                     <div class="col-md-6">
-                        <script src="https://widgets.coingecko.com/coingecko-coin-compare-chart-widget.js"></script>
-                        <coingecko-coin-compare-chart-widget  coin-ids="bitcoin,ethereum,eos,ripple,litecoin" currency="usd" locale="en"></coingecko-coin-compare-chart-widget>
+                        <script src="https://widgets.coingecko.com/coingecko-coin-ticker-widget.js"></script>
+                        <coingecko-coin-ticker-widget  coin-id="ethereum" currency="usd" locale="en"></coingecko-coin-ticker-widget>
                     </div><!-- .col -->
                     <div class="col-md-6">
                         <script src="https://widgets.coingecko.com/coingecko-coin-converter-widget.js"></script>
-                        <coingecko-coin-converter-widget  coin-id="bitcoin" currency="usd" background-color="#ffffff" font-color="#4c4c4c" locale="en"></coingecko-coin-converter-widget>
+                        <coingecko-coin-converter-widget  coin-id="ethereum" currency="usd" background-color="#ffffff" font-color="#4c4c4c" locale="en"></coingecko-coin-converter-widget>
+
                     </div><!-- .col -->
                 </div><!-- .row -->
             </div><!-- .nk-block -->

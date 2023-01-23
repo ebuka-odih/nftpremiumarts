@@ -24,10 +24,10 @@
                                     <h5 class="nk-block-title">Confirm Order</h5>
                                     <i class="icon icon-circle icon-circle-xxl ni ni-wallet-saving bg-info"></i>
 
-                                    <div class="nk-block-text">
-                                        <div class="caption-text">You are about to get <strong>{{ $deposit->showBTCRate() }}</strong> BTC for <strong>@convert($deposit->amount)</strong> USD*</div>
-                                        <span class="sub-text-sm">Exchange rate: 1 BTC = @convert($deposit->rate()) USD</span>
-                                    </div>
+{{--                                    <div class="nk-block-text">--}}
+{{--                                        <div class="caption-text">You are about to get <strong>{{ $deposit->showBTCRate() }}</strong> BTC for <strong>@convert($deposit->amount)</strong> USD*</div>--}}
+{{--                                        <span class="sub-text-sm">Exchange rate: 1 BTC = @convert($deposit->rate()) USD</span>--}}
+{{--                                    </div>--}}
                                 </div>
                                 <div class="nk-block">
                                     <div class="buysell-overview">

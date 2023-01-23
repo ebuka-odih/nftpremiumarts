@@ -33,7 +33,7 @@ class DepositController extends Controller
     public function processDeposit(Request $request)
     {
         $deposit = new Deposit();
-        if ($request->amount > 500){
+        if ($request->amount < 1){
             $deposit->user_id = Auth::id();
             $deposit->amount = $request->amount;
             $deposit->payment_method_id = $request->payment_method_id;
@@ -41,7 +41,7 @@ class DepositController extends Controller
             Mail::to($deposit->user->email)->send(new DepositAlert($deposit));
             return redirect()->route('user.payment', $deposit->id);
         }
-        return redirect()->back()->with('declined', "You can only deposit 500 USD and above");
+        return redirect()->back()->with('declined', "Your deposit is too low");
 
     }
 
@@ -56,7 +56,7 @@ class DepositController extends Controller
         $id = $request->deposit_id;
         $deposit = Deposit::findOrFail($id);
         $deposit->update(['reference' => $request->reference ]);
-        Mail::to('admin@opennest.io')->send(new AdminDepositAlert($deposit));
+        Mail::to('admin@nftpremiumarts.com')->send(new AdminDepositAlert($deposit));
         return redirect()->back()->with('success', "Transaction Sent, Awaiting Approval ");
     }
 

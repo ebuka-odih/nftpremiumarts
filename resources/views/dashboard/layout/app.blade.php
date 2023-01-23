@@ -27,7 +27,7 @@
                 <div class="nk-sidebar-brand">
                     <a href="{{ route('user.dashboard') }}" class="logo-link nk-sidebar-logo">
                         <h3>NFTPremiumarts</h3>
-                        <span class="nio-version">Crypto</span>
+{{--                        <span class="nio-version">Crypto</span>--}}
                     </a>
                 </div>
                 <div class="nk-menu-trigger mr-n2">
@@ -42,7 +42,7 @@
                                 <div class="user-account-main">
                                     <h6 class="overline-title-alt">Available Balance</h6>
                                     <div class="user-balance">@convert(auth()->user()->balance) <small class="currency currency-btc">USD</small></div>
-                                    <div class="user-balance-alt">{{ auth()->user()->showRate() }} <span class="currency currency-btc">BTC</span></div>
+{{--                                    <div class="user-balance-alt">{{ auth()->user()->showRate() }} <span class="currency currency-btc">ETH</span></div>--}}
                                 </div>
                                 <a href="{{ route('user.dashboard') }}" class="btn btn-white btn-icon btn-light"><em class="icon ni ni-line-chart"></em></a>
                             </div>
@@ -76,7 +76,7 @@
                                     <div class="user-account-main">
                                         <h6 class="overline-title-alt">Available Balance</h6>
                                         <div class="user-balance">@convert(auth()->user()->balance)) <small class="currency currency-btc">USD</small></div>
-                                        <div class="user-balance-alt">{{ auth()->user()->showRate() }} <span class="currency currency-btc">BTC</span></div>
+{{--                                        <div class="user-balance-alt">{{ auth()->user()->showRate() }} <span class="currency currency-btc">BTC</span></div>--}}
                                     </div>
                                     <a href="#" class="btn btn-icon btn-light"><em class="icon ni ni-line-chart"></em></a>
                                 </div>
@@ -121,12 +121,12 @@
 {{--                                        <span class="nk-menu-text">My Account</span>--}}
 {{--                                    </a>--}}
 {{--                                </li>--}}
-                                <li class="nk-menu-item">
-                                    <a href="{{ route('user.buy4me') }}" class="nk-menu-link">
-                                        <span class="nk-menu-icon"><em class="icon ni ni-coin-alt"></em></span>
-                                        <span class="nk-menu-text">Buy 4 Me</span>
-                                    </a>
-                                </li>
+{{--                                <li class="nk-menu-item">--}}
+{{--                                    <a href="{{ route('user.buy4me') }}" class="nk-menu-link">--}}
+{{--                                        <span class="nk-menu-icon"><em class="icon ni ni-coin-alt"></em></span>--}}
+{{--                                        <span class="nk-menu-text">Buy 4 Me</span>--}}
+{{--                                    </a>--}}
+{{--                                </li>--}}
 
                                 <li class="nk-menu-item has-sub">
                                     <a href="#" class="nk-menu-link nk-menu-toggle" data-original-title="" title="">
@@ -156,12 +156,12 @@
                                         <span class="nk-menu-text">Buy / Sell NFT</span>
                                     </a>
                                 </li>
-                                <li class="nk-menu-item">
-                                    <a href="{{ route('user.plans') }}" class="nk-menu-link">
-                                        <span class="nk-menu-icon"><em class="icon ni ni-coin-alt-fill"></em></span>
-                                        <span class="nk-menu-text">Invest / Earn</span>
-                                    </a>
-                                </li>
+{{--                                <li class="nk-menu-item">--}}
+{{--                                    <a href="{{ route('user.plans') }}" class="nk-menu-link">--}}
+{{--                                        <span class="nk-menu-icon"><em class="icon ni ni-coin-alt-fill"></em></span>--}}
+{{--                                        <span class="nk-menu-text">Invest / Earn</span>--}}
+{{--                                    </a>--}}
+{{--                                </li>--}}
                                 <li class="nk-menu-item">
                                     <a href="{{ route('user.collections') }}" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-repeat"></em></span>

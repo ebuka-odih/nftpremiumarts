@@ -117,13 +117,21 @@ class User extends Authenticatable implements MustVerifyEmail
     public function showRate()
     {
         $currency = Currency::convert()
-            ->from('USD')
+            ->from('BTC')
             ->to('BTC')
             ->source('crypto')
-            ->round(7)
+
+            ->withoutVerifying()
             ->get();
         return floor($currency * $this->balance);
     }
+
+//    public function showRate() {
+//
+//        $url = "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd";
+//        $data = json_decode(file_get_contents($url));
+//        return $data->ethereum->usd;
+//    }
 
 
 }
