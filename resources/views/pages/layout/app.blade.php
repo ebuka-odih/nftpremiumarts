@@ -38,7 +38,7 @@
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <div class="brand-logo">
                                 <a href="{{ route('index') }}">
-                                    <img style="margin-bottom: -20px; margin-top: -20px" height="110" width="110" src="img2/logo.png" alt="" class="logo-primary">
+                                    <img style="margin-bottom: -20px; margin-top: -20px" height="100" width="250" src="img/logo.png" alt="" class="logo-primary">
 {{--                                    <h3 class="text-white">NFT Premiumarts</h3>--}}
 {{--                                    <img src="images/logow.png" alt="" class="logo-white">--}}
                                 </a>

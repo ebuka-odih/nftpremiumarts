@@ -67,7 +67,7 @@
                                             <a class="nk-wgw-inner" >
                                                 <div class="nk-wgw-name">
                                                     <div class="nk-wgw-icon">
-                                                        <em class="icon ni ni-sign-btc"></em>
+                                                        <em class="icon ni ni-sign-eth"></em>
                                                     </div>
                                                     <h5 class="nk-wgw-title title">Total Deposit</h5>
                                                 </div>
@@ -101,7 +101,7 @@
                                             <a class="nk-wgw-inner" >
                                                 <div class="nk-wgw-name">
                                                     <div class="nk-wgw-icon">
-                                                        <em class="icon ni ni-sign-btc"></em>
+                                                        <em class="icon ni ni-sign-eth"></em>
                                                     </div>
                                                     <h5 class="nk-wgw-title title">Total Withdrawal</h5>
                                                 </div>

@@ -70,7 +70,7 @@ class SellNFTController extends Controller
             $nft->description = $request->get('description');
             $nft->image = $input['imagename'];
             $nft->save();
-            return redirect()->route('user.myUploads');
+            return redirect()->back()->with('success', "Uploaded Successfully, Wait for approval");
         }
         $nft = new SellNFT();
         $nft->user_id = Auth::id();
@@ -79,7 +79,7 @@ class SellNFTController extends Controller
         $nft->network = $request->get('network');
         $nft->description = $request->get('description');
         $nft->save();
-        return redirect()->route('admin.myUploads');
+        return redirect()->back()->with('success', "Uploaded Successfully, Wait for approval");
     }
 
     public function myUploads()

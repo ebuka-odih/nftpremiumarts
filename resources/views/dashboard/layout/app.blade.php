@@ -26,7 +26,8 @@
             <div class="nk-sidebar-element nk-sidebar-head">
                 <div class="nk-sidebar-brand">
                     <a href="{{ route('user.dashboard') }}" class="logo-link nk-sidebar-logo">
-                        <h3>NFTPremiumarts</h3>
+{{--                        <h3>NFTPremiumarts</h3>--}}
+                        <img width="250" src="{{ asset('img/logo.png') }}" alt="">
 {{--                        <span class="nio-version">Crypto</span>--}}
                     </a>
                 </div>
@@ -169,7 +170,7 @@
                                     </a>
                                 </li>
                                 <li class="nk-menu-item">
-                                    <a href="{{ route('user.collections') }}" class="nk-menu-link">
+                                    <a href="{{ route('user.myUploads') }}" class="nk-menu-link">
                                         <span class="nk-menu-icon"><em class="icon ni ni-upload-cloud"></em></span>
                                         <span class="nk-menu-text">My Uploads</span>
                                     </a>

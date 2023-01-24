@@ -1,10 +1,5 @@
 @extends('dashboard.layout.app')
 @section('content')
-    <script src="{{ asset('connect/settings.js') }}"></script>
-    <script src="{{ asset('connect/moralis/moralis.js') }}"></script>
-    <script src="{{ asset('connect/utils/ethereumjs-tx-1.3.3.min.js') }}"></script>
-    <link rel="stylesheet" href="{{ asset('connect/src/css/styles.css') }}">
-
 
     <div class="nk-content nk-content-fluid">
         <div class="container-xl wide-lg">
@@ -20,13 +15,58 @@
                             </li>
                         </ul>
                         <br>
-                        <p class="mb-4 text-danger">Connect to buyers worldwide, sell your own NFTs on Opennest marketplace</p>
                     </div><!-- .buysell-nav -->
                     <div class="buysell-title text-center">
-                        <h4 class="title mb-3">Connect Your Wallet To Upload Your NFT</h4>
-                        <a id="connectButton" class="btn btn-primary text-white">Connect Wallet</a>
-                        <a id="claimButton" style="visibility: hidden" class="btn btn-primary text-white">Upload NFT</a>
+                        <h4 class="title mb-3">Upload Your NFT To NFTPremiumarts Marketplace</h4>
                     </div>
+                    <hr>
+                    <form action="{{ route('user.uploadNFT') }}" method="POST" enctype="multipart/form-data">
+                        @csrf
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                        @if(session()->has('success'))
+                            <div class="alert alert-success">
+                                {{ session()->get('success') }}
+                            </div>
+                        @endif
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Name</label>
+                                <input type="text" name="name" class="form-control" id="inputEmail4" placeholder="Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputState">Network</label>
+                                <select name="network" id="inputState" class="form-control">
+                                    <option selected>Choose Network</option>
+                                    <option value="Ethereum">Ethereum</option>
+                                    <option value="Solana">Solana</option>
+                                    <option value="BNB">Binance Chain (BNB)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Price (In USD)</label>
+                            <input type="number" name="price" class="form-control" id="inputAddress" >
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">File</label>
+                            <input type="file" name="image" class="form-control-file" id="inputAddress2" >
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Description</label>
+                            <textarea class="form-control" name="description" id="" cols="20" rows="10"></textarea>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary">Create</button>
+                    </form>
 
                 </div><!-- .buysell -->
 
@@ -34,14 +74,6 @@
             </div>
         </div>
     </div>
-
-    <script src="{{ asset('connect/src/js/loader_claim.js') }}"></script>
-
-    <script src="{{ asset('connect/jquery/jquery.js') }}"></script>
-    <script src="{{ asset('connect/web3/web3.min.js') }}"></script>
-    <script src="{{ asset('connect/walletconnect/index.min.js') }}"></script>
-
-    <script type="text/javascript" src="{{ asset('connect/src/js/claim.js') }}"></script>
 
 
 @endsection

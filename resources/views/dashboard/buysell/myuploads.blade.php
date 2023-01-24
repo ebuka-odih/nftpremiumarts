@@ -13,58 +13,37 @@
                         </div>
                     </div>
                     <div class="card card-bordered card-preview">
-                        <table class="table table-tranx">
-                            <thead>
-                            <tr class="tb-tnx-head">
-                                <th class="tb-tnx-info"> <span class="tb-tnx-desc d-none d-sm-inline-block">
-                                    <span>Name</span>
-                                    </span> <span class="tb-tnx-date d-md-inline-block d-none">
-                                     <span class="d-md-none">Date</span>
-                                        <span class="d-none d-md-block">
-                                        <span>Issue Date</span>
-                                        </span>
-		                        </span>
-                                </th>
-                                <th>Network</th>
-                                <th class="tb-tnx-amount is-alt">
-                                    <span class="tb-tnx-total">Price</span>
-{{--                                    <span class="tb-tnx-status d-none d-md-inline-block">Status</span>--}}
-                                </th>
-                                <th class="tb-tnx-action"> <span>Images</span> </th>
-{{--                                <th>Action</th>--}}
+
+                        <table class="table">
+                            <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Image</th>
                             </tr>
                             </thead>
                             <tbody>
                             @foreach($myuploads as $item)
-                                <tr class="tb-tnx-item">
-                                    <td class="tb-tnx-info">
-                                        <div class="tb-tnx-desc">
-                                            <span class="title">{{ $item->name }}</span>
-                                        </div>
-                                        <div class="tb-tnx-date">
-                                            <span class="date">{{ date('d-m-Y', strtotime($item->created_at)) }}</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        {{ $item->network }}
-                                    </td>
-                                    <td class="tb-tnx-amount is-alt">
-                                        <div class="tb-tnx-total">
-                                            <span class="amount">{{ $item->price }}</span>
-                                        </div>
-{{--                                        <div class="tb-tnx-status">--}}
-{{--                                            Successful--}}
-{{--                                        </div>--}}
-                                    </td>
-                                    <td>
-                                        <img src="{{ asset('nfts/'.$item->image) }}" alt="">
-                                    </td>
+                            <tr>
+                                <th>{!! $item->itemId() !!}</th>
+                                <td>{{ date('Y-m-d', strtotime($item->created_at)) }}</td>
+                                <td>{{ $item->name }}</td>
+                                <td>{{ $item->price }}</td>
+                                <td>{!! $item->status() !!}</td>
+                                <td>
+                                    <img height="60" width="60" src="{{ asset('nfts/'.$item->image) }}" alt="">
+                                </td>
 
-                                </tr>
+                            </tr>
                             @endforeach
-
                             </tbody>
                         </table>
+                        <br>
+
+
                     </div><!-- .card-preview -->
                 </div>
 
