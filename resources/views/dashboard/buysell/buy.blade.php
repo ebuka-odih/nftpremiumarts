@@ -21,7 +21,7 @@
                     <div class="nk-block-head">
                         <div class="nk-block-head-content">
                             <h4 class="title nk-block-title">NFT Marketplace</h4>
-                            <p>Make direct NFT purchase from Opennest</p>
+                            <p>Make direct NFT purchase from NFTPremium</p>
                         </div>
                     </div>
                     <hr>

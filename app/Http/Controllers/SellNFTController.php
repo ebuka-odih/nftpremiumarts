@@ -55,31 +55,38 @@ class SellNFTController extends Controller
            'description' => 'nullable',
            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
        ]);
+       if (\auth()->user()->balance >= 250){
+           if ($request->hasFile('image')){
+               $image = $request->file('image');
+               $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
+               $destinationPath = public_path('/nfts');
+               $image->move($destinationPath, $input['imagename']);
 
-        if ($request->hasFile('image')){
-            $image = $request->file('image');
-            $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
-            $destinationPath = public_path('/nfts');
-            $image->move($destinationPath, $input['imagename']);
+               $nft = new SellNFT();
+               $nft->user_id = Auth::id();
+               $nft->name = $request->get('name');
+               $nft->price = $request->get('price');
+               $nft->network = $request->get('network');
+               $nft->description = $request->get('description');
+               $nft->image = $input['imagename'];
+               $nft->save();
+               return redirect()->back()->with('success', "Uploaded Successfully, Wait for approval");
+           }else{
+               $nft = new SellNFT();
+               $nft->user_id = Auth::id();
+               $nft->name = $request->get('name');
+               $nft->price = $request->get('price');
+               $nft->network = $request->get('network');
+               $nft->description = $request->get('description');
+               $nft->save();
+               return redirect()->back()->with('success', "Uploaded Successfully, Wait for approval");
+           }
 
-            $nft = new SellNFT();
-            $nft->user_id = Auth::id();
-            $nft->name = $request->get('name');
-            $nft->price = $request->get('price');
-            $nft->network = $request->get('network');
-            $nft->description = $request->get('description');
-            $nft->image = $input['imagename'];
-            $nft->save();
-            return redirect()->back()->with('success', "Uploaded Successfully, Wait for approval");
-        }
-        $nft = new SellNFT();
-        $nft->user_id = Auth::id();
-        $nft->name = $request->get('name');
-        $nft->price = $request->get('price');
-        $nft->network = $request->get('network');
-        $nft->description = $request->get('description');
-        $nft->save();
-        return redirect()->back()->with('success', "Uploaded Successfully, Wait for approval");
+       }
+        return redirect()->back()->with('declined', "Your balance is too low to mint, minimum: $250");
+
+
+
     }
 
     public function myUploads()

@@ -48,28 +48,6 @@
                                             <p>{{ $nft->description }}</p>
                                             <div class="d-flex"><a  class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Buy this item</a></div>
 
-
-
-                                            <div class="collapse" id="collapseExample">
-                                                <div class="card card-body">
-                                                    <h3 class="mb-4">Pay to the wallet below</h3>
-                                                    <hr>
-                                                    <h5>{{ $nft->payment_method->name }}</h5>
-                                                    <div class="input-group">
-                                                        <input type="text" readonly class="form-control" id="foo" value="{{ $nft->payment_method->value }}">
-
-                                                        <div class="input-group-prepend">
-                                                            <button class="btn input-group-text" data-clipboard-target="#foo">
-                                                                Copy
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-10 mt-2">
-                                                        {!! QrCode::size(200)->generate($nft->payment_method->value); !!}
-                                                    </div>
-                                                    <a href="" class="btn btn-sm btn-primary mt-2">Paid</a>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>

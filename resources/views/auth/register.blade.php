@@ -25,11 +25,11 @@
         <div class="row justify-content-center h-100 align-items-center">
             <div class="col-xl-5 col-md-6">
                 <div class="mini-logo text-center my-4">
-                    <a href="/">
-                        <img style="margin-bottom: -30px; margin-top: -20px" height="120" width="120" src="{{ asset('img2/opennest.png') }}" alt="" class="logo-primary">
+                    <a href="{{ route('index') }}">
+                        <img style="margin-bottom: -30px; margin-top: -20px" height="120" width="250" src="{{ asset('img/logo.png') }}" alt="" class="logo-primary">
 
                     </a>
-                    <h4 class="card-title mt-5">Sign up to Opennest</h4>
+                    <h4 class="card-title mt-5">Sign up to NFTPremiumarts</h4>
                 </div>
                 <div class="auth-form card">
                     <div class="card-body">
