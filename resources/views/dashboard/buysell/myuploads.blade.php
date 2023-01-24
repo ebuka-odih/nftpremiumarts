@@ -14,33 +14,35 @@
                     </div>
                     <div class="card card-bordered card-preview">
 
-                        <table class="table">
-                            <thead class="thead-dark">
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Date</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Status</th>
-                                <th scope="col">Image</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            @foreach($myuploads as $item)
-                            <tr>
-                                <th>{!! $item->itemId() !!}</th>
-                                <td>{{ date('Y-m-d', strtotime($item->created_at)) }}</td>
-                                <td>{{ $item->name }}</td>
-                                <td>{{ $item->price }}</td>
-                                <td>{!! $item->status() !!}</td>
-                                <td>
-                                    <img height="60" width="60" src="{{ asset('nfts/'.$item->image) }}" alt="">
-                                </td>
+                       <div class="table-responsive">
+                           <table class="table">
+                               <thead class="thead-dark">
+                               <tr>
+                                   <th scope="col">#</th>
+                                   <th scope="col">Date</th>
+                                   <th scope="col">Name</th>
+                                   <th scope="col">Price</th>
+                                   <th scope="col">Status</th>
+                                   <th scope="col">Image</th>
+                               </tr>
+                               </thead>
+                               <tbody>
+                               @foreach($myuploads as $item)
+                                   <tr>
+                                       <th>{!! $item->itemId() !!}</th>
+                                       <td>{{ date('Y-m-d', strtotime($item->created_at)) }}</td>
+                                       <td>{{ $item->name }}</td>
+                                       <td>{{ $item->price }}</td>
+                                       <td>{!! $item->status() !!}</td>
+                                       <td>
+                                           <img height="60" width="60" src="{{ asset('nfts/'.$item->image) }}" alt="">
+                                       </td>
 
-                            </tr>
-                            @endforeach
-                            </tbody>
-                        </table>
+                                   </tr>
+                               @endforeach
+                               </tbody>
+                           </table>
+                       </div>
                         <br>
 
 

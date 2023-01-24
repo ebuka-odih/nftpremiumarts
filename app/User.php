@@ -104,6 +104,10 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         return $this->hasMany(Buy4Me::class, 'user_id');
     }
+    public function sellnft()
+    {
+        return $this->hasMany(SellNFT::class, 'user_id');
+    }
 
     public function getProfilePicAttribute($value) {
         if(!$this->attributes['avatar']) {

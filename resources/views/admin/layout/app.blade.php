@@ -153,9 +153,9 @@
                         </a>
                     </li>
                     <li class="nav-main-item">
-                        <a class="nav-main-link nav-main"  href="{{ route('admin.buy4me') }}">
+                        <a class="nav-main-link nav-main"  href="{{ route('admin.nft.list') }}">
                             <i class="nav-main-link-icon fa fa-save"></i>
-                            <span class="nav-main-link-name">Buy 4 Me</span>
+                            <span class="nav-main-link-name">Uploaded NFT</span>
                         </a>
                     </li>
 

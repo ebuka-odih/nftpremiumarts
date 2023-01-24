@@ -9,7 +9,7 @@
             <div class="d-md-flex justify-content-md-between align-items-md-center py-3 pt-md-3 pb-md-0 text-center text-md-start">
                 <div>
                     <h1 class="h3 mb-1">
-                        All Buy4me
+                        All NFT Listed For Sell
                     </h1>
                 </div>
             </div>
@@ -51,7 +51,7 @@
                                     <td>{!! $item->adminStatus() !!}</td>
                                     <td class="text-center">
                                         @if($item->status == 0)
-                                        <a href="{{ route('admin.approveBuy4me', $item->id) }}" class="btn btn-sm btn-success mb-2">Approve</a>
+                                            <a href="{{ route('admin.approveBuy4me', $item->id) }}" class="btn btn-sm btn-success mb-2">Approve</a>
                                         @endif
                                         <form method="POST" action="{!! route('admin.collectable.destroy', $item->id) !!}" accept-charset="UTF-8">
                                             <input name="_method" value="DELETE" type="hidden">

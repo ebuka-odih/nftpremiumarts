@@ -51,4 +51,6 @@ Route::group(['middleware' => ['auth', 'verified', 'admin'], 'prefix' => 'admin'
     Route::get('buy4me', "Admin\AdminBuy4Me@buy4me")->name('buy4me');
     Route::get('approve/buy4me/{id}', "Admin\AdminBuy4Me@approveBuy4me")->name('approveBuy4me');
 
+    Route::get('nft/list', "Admin\AdminSellController@list")->name('nft.list');
+    Route::get('apr/list/{id}', "Admin\AdminSellController@approve")->name('nft.approve');
 });
