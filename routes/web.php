@@ -12,11 +12,11 @@ Route::get('/contact', 'PagesController@contact')->name('contact');
 
 Route::view('admin/login', 'auth.admin');
 
-Auth::routes(['verify' => true]);
+Auth::routes();
 include "admin.php";
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 'user.'], function(){
+Route::group(['middleware' => ['auth'], 'prefix' => 'user', 'as' => 'user.'], function(){
     Route::get('dashboard', "UserController@dashboard")->name('dashboard');
     Route::get('account/details', "UserController@wallet")->name('wallet');
     Route::get('referrals', "UserController@all_referrals")->name('all_referrals');
