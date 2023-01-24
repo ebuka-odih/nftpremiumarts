@@ -225,9 +225,8 @@
                             <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
                         </div>
                         <div class="nk-header-brand d-xl-none">
-                            <a href="/" class="logo-link">
-                               <h3>NFTPremiumarts</h3>
-                                <span class="nio-version">Crypto</span>
+                            <a href="{{ route('index') }}" class="logo-link">
+                                <img width="250" src="{{ asset('img/logo2.png') }}" alt="">
                             </a>
                         </div>
                         <div class="nk-header-news d-none d-xl-block">

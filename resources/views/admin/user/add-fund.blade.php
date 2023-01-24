@@ -18,32 +18,7 @@
 
         <!-- Page Content -->
         <div class="content">
-            <div class="row">
-                <div class="col-lg-6">
-                    <!-- Block Tabs Animated Fade -->
-                    <div class="block block-rounded">
-                        <ul class="nav nav-tabs nav-tabs-block" role="tablist">
-                            <li class="nav-item">
-                                <a href="" class="nav-link active" id="btabs-animated-fade-home-tab" data-bs-toggle="tab" data-bs-target="#btabs-animated-fade-home" role="tab" aria-controls="btabs-animated-fade-home" aria-selected="true">Add Bank Payment Method</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- END Block Tabs Animated Fade -->
-                </div>
 
-                <div class="col-lg-6">
-                    <!-- Block Tabs Animated Fade -->
-                    <div class="block block-rounded">
-                        <ul class="nav nav-tabs nav-tabs-block" role="tablist">
-                            <li class="nav-item">
-                                <a href="" class="nav-link" id="btabs-animated-fade-profile-tab" data-bs-toggle="tab" data-bs-target="#btabs-animated-fade-profile" role="tab" aria-controls="btabs-animated-fade-profile" aria-selected="false">Add Crypto Payment Method</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- END Block Tabs Animated Fade -->
-                </div>
-
-            </div>
             <!-- Elements -->
             <div class="block block-rounded">
                 <div class="block-content">
@@ -81,9 +56,8 @@
                                     <label class="form-label"  for="example-email-input">Type of Fund</label>
                                     <select name="type" id="" class="form-control ">
                                         <option disabled selected>Select </option>
-                                        <option value="Bonus">Bonus</option>
-                                        <option value="Profit">Profit</option>
-                                        <option value="Referral-Bonus">Referral Bonus</option>
+                                        <option value="Deposit">Deposit</option>
+
                                         {{--                                        <option value="Profit">Profit</option>--}}
                                     </select>
                                 </div>
