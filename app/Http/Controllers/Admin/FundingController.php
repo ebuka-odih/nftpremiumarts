@@ -43,6 +43,7 @@ class FundingController extends Controller
         $users = User::where('admin', 0)->get();
         return view('admin.user.defund', compact('users'));
     }
+
     public function sendDefund(Request $request)
     {
         $data = $this->getData($request);

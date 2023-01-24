@@ -94,4 +94,10 @@ class SellNFTController extends Controller
         $myuploads = SellNFT::whereUserId(\auth()->id())->paginate(10);
         return view('dashboard.buysell.myuploads', compact('myuploads'));
     }
+
+    public function sellNFT()
+    {
+
+    }
+
 }

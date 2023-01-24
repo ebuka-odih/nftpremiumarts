@@ -21,6 +21,12 @@
         li.footer-text > a{
            color: white;
         }
+        @media only screen and (max-width: 600px) {
+            .logo-primary {
+                width: 120px;
+                height: 80px;
+            }
+        }
     </style>
 </head>
 
