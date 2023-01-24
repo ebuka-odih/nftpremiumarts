@@ -16,9 +16,10 @@ class ApprovedUploadedNFT extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public $nft;
+    public function __construct($nft)
     {
-        //
+        $this->nft = $nft;
     }
 
     /**
@@ -28,6 +29,8 @@ class ApprovedUploadedNFT extends Mailable
      */
     public function build()
     {
-        return $this->markdown('email.approve-upload');
+        return $this->markdown('email.approve-upload')
+            ->subject(env('APP_NAME'))
+            ->from(env('MAIL_FROM_ADDRESS'));
     }
 }

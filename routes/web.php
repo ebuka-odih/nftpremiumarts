@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'PagesController@index')->name('index');
 Route::get('/explore', 'NFTListingController@explore')->name('explore');
 Route::get('/collection', 'PagesController@collections')->name('collections');
-Route::get('/explore/details/SFG224VAV{id}4R5VA', 'NFTListingController@details')->name('details')->middleware(['auth', 'verified']);
+Route::get('/explore/details/SFG224VAV{id}4R5VA', 'PagesController@details')->name('details')->middleware(['auth', 'verified']);
 Route::get('/about', 'PagesController@about')->name('about');
 Route::get('/contact', 'PagesController@contact')->name('contact');
 

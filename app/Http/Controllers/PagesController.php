@@ -30,4 +30,9 @@ class PagesController extends Controller
         $collections = SellNFT::all();
         return view('pages.collections', compact('collections'));
     }
+    public function details($id)
+    {
+        $nft = SellNFT::findOrFail($id);
+        return view('pages.details', compact('nft'));
+    }
 }

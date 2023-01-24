@@ -52,7 +52,7 @@
                                 <ul class="navbar-nav me-auto" >
                                     <li class="nav-item dropdown"><a class="nav-link" href="{{ route('index') }}">Home</a></li>
                                     <li class="nav-item"><a class="nav-link" href="{{ route('explore') }}">Explore</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="{{ route('collections') }}">Collections</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{{ route('collections') }}">Marketplace</a></li>
 {{--                                    <li class="nav-item"><a class="nav-link" href="item.html">Item</a></li>--}}
                                     <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">About</a></li>
                                     <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
