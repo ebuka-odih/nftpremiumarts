@@ -226,7 +226,7 @@
                         </div>
                         <div class="nk-header-brand d-xl-none">
                             <a href="{{ route('index') }}" class="logo-link">
-                                <img width="250" src="{{ asset('img/logo2.png') }}" alt="">
+                                <img width="250" src="{{ asset('img/logo.png') }}" alt="">
                             </a>
                         </div>
                         <div class="nk-header-news d-none d-xl-block">
