@@ -37,4 +37,8 @@ class SellNFT extends Model
     {
         return $this->belongsTo(User::class);
     }
+    public function mynft()
+    {
+        return $this->hasMany(MyNFT::class);
+    }
 }

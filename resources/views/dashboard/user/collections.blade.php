@@ -9,7 +9,7 @@
                     <div class="nk-block-head">
                         <div class="nk-block-head-content">
                             <h4 class="nk-block-title">NFT Collections</h4>
-                            <p>These are collections of all NFTs purchased on your behalf</p>
+                            <p>These are collections of all NFTs purchased </p>
                         </div>
                     </div>
                     <div class="card card-bordered card-preview">
@@ -30,8 +30,7 @@
                                     <span class="tb-tnx-total">Price</span>
                                     <span class="tb-tnx-status d-none d-md-inline-block">Status</span>
                                 </th>
-                                <th class="tb-tnx-action"> <span>Images</span> </th>
-                                <th>Action</th>
+                                <th class="tb-tnx-action"> <span>Item</span> </th>
                             </tr>
                             </thead>
                             <tbody>
@@ -39,28 +38,25 @@
                             <tr class="tb-tnx-item">
                                 <td class="tb-tnx-info">
                                     <div class="tb-tnx-desc">
-                                        <span class="title">{{ $item->name }}</span>
+                                        <span class="title">{{ optional($item->sellnft)->name }}</span>
                                     </div>
                                     <div class="tb-tnx-date">
                                         <span class="date">{{ date('d-m-Y', strtotime($item->created_at)) }}</span>
                                     </div>
                                 </td>
                                 <td>
-                                    {{ $item->network }}
+                                    {{ $item->sellnft->network }}
                                 </td>
                                 <td class="tb-tnx-amount is-alt">
                                     <div class="tb-tnx-total">
-                                        <span class="amount">{{ $item->price }}</span>
+                                        <span class="amount">{{ $item->sellnft->price }} USD</span>
                                     </div>
                                     <div class="tb-tnx-status">
-                                        <span class="badge badge-dot badge-success">Successful</span>
+                                        {!! $item->status() !!}
                                     </div>
                                 </td>
                                 <td>
-                                    <img src="{{ asset('collections/'.$item->image) }}" alt="">
-                                </td>
-                                <td>
-                                    <a href="" class="btn btn-sm btn-primary">Mint</a>
+                                    <img height="60" width="60" src="{{ asset('nfts/'.$item->sellnft->image) }}" alt="">
                                 </td>
 
                             </tr>
