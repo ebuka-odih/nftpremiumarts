@@ -11,7 +11,8 @@ class MyNFTController extends Controller
 {
     public function buy(Request $request)
     {
-        if (\auth()->user()->balance < intval($request->amount) ){
+        $amount = intval($request->amount);
+        if (\auth()->user()->balance <  $amount){
             return redirect()->back()->with('declined', 'Your balance is low to purchase this item');
         }
         $buy = new MyNFT();
