@@ -15,6 +15,16 @@
                         </div>
                     </div>
                     <hr>
+                    @if(session()->has('success'))
+                        <div class="alert alert-success">
+                            {{ session()->get('success') }}
+                        </div>
+                    @endif
+                    @if(session()->has('declined'))
+                        <div class="alert alert-danger">
+                            {{ session()->get('declined') }}
+                        </div>
+                    @endif
                     <div class="card card-preview">
                         <div class="card-inner">
                             <div class="row">
@@ -46,7 +56,15 @@
                                                 </div>
                                             </div>
                                             <p>{{ $nft->description }}</p>
-                                            <div class="d-flex"><a  class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Buy this item</a></div>
+                                            <div class="d-flex">
+                                                <form action="{{ route('user.buy.item') }}" method="POST">
+                                                    @csrf
+                                                    <input type="hidden" name="nft_id" value="{{ $nft->id }}">
+                                                    <input type="hidden" name="amount" value="{{ $nft->price }}">
+                                                    <button type="submit" class="btn btn-primary">Buy this item</button>
+                                                </form>
+
+                                            </div>
 
                                         </div>
                                     </div>

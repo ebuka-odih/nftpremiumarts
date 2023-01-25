@@ -16,6 +16,10 @@ class CreateMyNFTSTable extends Migration
         Schema::create('my_n_f_t_s', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->bigInteger('user_id');
+            $table->bigInteger('sell_n_f_t_s_id');
+            $table->integer('status')->default(0)->nullable();
+            $table->decimal('amount', 12, 2)->nullable();
         });
     }
 

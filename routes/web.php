@@ -72,6 +72,6 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'user', 'as' => 'user.'], fu
     Route::post('process/investment', 'InvestmentController@processInvest')->name('processInvest');
     Route::get('investment/details/DFRY64521{id}3FFAG', 'InvestmentController@investmentDetails')->name('investmentDetails');
 
-
+    Route::post('buy/item', "MyNFTController@buy")->name('buy.item');
 
 });

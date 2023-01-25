@@ -95,9 +95,5 @@ class SellNFTController extends Controller
         return view('dashboard.buysell.myuploads', compact('myuploads'));
     }
 
-    public function sellNFT()
-    {
-
-    }
 
 }
