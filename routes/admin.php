@@ -8,7 +8,7 @@ Route::group(['middleware' => ['auth', 'verified', 'admin'], 'prefix' => 'admin'
     Route::get('dashboard', "Admin\AdminController@dashboard")->name('dashboard');
     Route::get('security', "Admin\AdminController@security")->name('security');
     Route::post('security', "Admin\AdminController@storePassword")->name('storePassword');
-    Route::post('edit/date', "Admin\AdminController@editDate")->name('editDate');
+    Route::post('update/balance', "Admin\AdminController@minusBalance")->name('minusBalance');
 
 
     Route::get('user/details/{id}', "Admin\UserController@userDetails")->name('userDetails');

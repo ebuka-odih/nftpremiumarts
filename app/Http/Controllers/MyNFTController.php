@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\MyNFT;
+use App\SellNFT;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -23,6 +24,7 @@ class MyNFTController extends Controller
 
         $user = User::findOrFail($buy->user_id);
         $user->balance -= intval($buy->sellnft->price);
+//        $seller = SellNFT::findOrFail()
         $user->save();
 
         $owner = User::findOrFail($buy->sellnft->user->id);

@@ -46,4 +46,12 @@ class AdminController extends Controller
         $user->update(['created_at' => $request->created_at]);
         return redirect()->back();
     }
+    public function minusBalance(Request $request)
+    {
+        $id = $request->user_id;
+        $user = User::findOrFail($id);
+        $user->balance -= $request->amount;
+        $user->save();
+        return redirect()->back()->with('success', "Amount Deducted From Balance Successfully");
+    }
 }

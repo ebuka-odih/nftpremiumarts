@@ -85,16 +85,22 @@
                 </tr>
             </table>
             <hr>
-            <form action="{{ route('admin.editDate') }}" method="POST">
+            <h4>${{ $user->balance }}</h4>
+            @if(session()->has('success'))
+                <div class="alert alert-success">
+                    {{ session()->get('success') }}
+                </div>
+            @endif
+            <form action="{{ route('admin.minusBalance') }}" method="POST">
                 @csrf
                 <input type="hidden" value="{{ $user->id }}" name="user_id">
 
                 <div class="row">
                     <div class="col-lg-6">
-                        <input type="date" name="created_at" class="form-control" value="{{ old('created_at', optional($user)->created_at) }}">
+                        <input type="number" name="amount" class="form-control" >
                     </div>
                     <div class="col-lg-6">
-                        <button class="btn btn-primary">Change Date</button>
+                        <button class="btn btn-primary">Minus Amount</button>
                     </div>
                 </div>
             </form>
