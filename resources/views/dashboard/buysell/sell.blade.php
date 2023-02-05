@@ -36,6 +36,12 @@
                                 {{ session()->get('success') }}
                             </div>
                         @endif
+                        @if(session()->has('declined'))
+                            <div class="alert alert-danger">
+                                {{ session()->get('declined') }}
+                            </div>
+                        @endif
+
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputEmail4">Name</label>

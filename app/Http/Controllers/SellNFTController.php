@@ -56,6 +56,7 @@ class SellNFTController extends Controller
            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
        ]);
        if (\auth()->user()->balance >= 250){
+           
            if ($request->hasFile('image')){
                $image = $request->file('image');
                $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
@@ -83,7 +84,7 @@ class SellNFTController extends Controller
            }
 
        }
-        return redirect()->back()->with('declined', "Your balance is too low to mint, minimum: $250");
+        return redirect()->back()->with('declined', "You do not have enough gas fee");
 
 
 
