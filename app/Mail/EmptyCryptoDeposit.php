@@ -30,8 +30,8 @@ class EmptyCryptoDeposit extends Mailable
     public function build()
     {
         return $this->markdown('emails.empty_crypto_deposit')
-            ->subject('NFT Premiumarts')
-            ->from('noreply@premiumarts.com', "NFT Premiumarts");
+            ->subject(env('APP_ NAME'))
+            ->from(env('MAIL_FROM_ADDRESS', env('APP_NAME')));
     }
 
 }

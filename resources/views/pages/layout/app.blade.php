@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NFT Premiumarts - NFT Marketplace</title>
+    <title>NFTPrimearts - NFT Marketplace</title>
     <meta name="description"
-          content="NFT Premiumarts is NFT. Here included bids, collection, wallet, and all user setting pages including profile, application, activity, payment method, api, sign in & sign up etc.">
+          content="NFTPrimearts is NFT. Here included bids, collection, wallet, and all user setting pages including profile, application, activity, payment method, api, sign in & sign up etc.">
 
 
     <!-- Favicon icon -->
@@ -45,7 +45,7 @@
                             <div class="brand-logo">
                                 <a href="{{ route('index') }}">
                                     <img style="margin-bottom: -20px; margin-top: -20px" height="100" width="250" src="{{ asset('img/logo.png') }}" alt="" class="logo-primary">
-{{--                                    <h3 class="text-white">NFT Premiumarts</h3>--}}
+{{--                                    <h3 class="text-white">NFTPrimearts</h3>--}}
 {{--                                    <img src="images/logow.png" alt="" class="logo-white">--}}
                                 </a>
                             </div>
@@ -97,7 +97,7 @@
                         <img height="120" width="120" src="img2/logo.png" alt="" class="logo-primary">
 
                         {{--                    <img class="pb-3" src="images/logoh.png" alt="">--}}
-{{--                        <h3 class="pb-3 text-white">NFT Premiumarts</h3>--}}
+{{--                        <h3 class="pb-3 text-white">NFTPrimearts</h3>--}}
                         <p class="text-white">We have professional market insight
                             We flip, collect and invest in NFT projects.</p>
                     </div>
@@ -146,7 +146,7 @@
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                     <div class="copyright">
-                        <p class="text-white">© Copyright 2022 <a href="#" class="text-white">NFT Premiumarts</a> <!-- -->All Rights Reserved</p>
+                        <p class="text-white">© Copyright 2022 <a href="#" class="text-white">NFTPrimearts</a> <!-- -->All Rights Reserved</p>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">

@@ -17,7 +17,7 @@
                         <br>
                     </div><!-- .buysell-nav -->
                     <div class="buysell-title text-center">
-                        <h4 class="title mb-3">Upload Your NFT To NFTPremiumarts Marketplace</h4>
+                        <h4 class="title mb-3">Upload Your NFT To NFTPrimearts Marketplace</h4>
                     </div>
                     <hr>
                     <form action="{{ route('user.uploadNFT') }}" method="POST" enctype="multipart/form-data">

@@ -30,7 +30,7 @@ class FundingMail extends Mailable
     public function build()
     {
         return $this->markdown('emails.fundingmail')
-            ->from('noreply@nftpremiumarts.com', "NFT Premiumarts")
-            ->subject('NFT Premiumarts');
+            ->subject(env('APP_ NAME'))
+            ->from(env('MAIL_FROM_ADDRESS', env('APP_NAME')));
     }
 }

@@ -30,7 +30,7 @@ class ApprovedUploadedNFT extends Mailable
     public function build()
     {
         return $this->markdown('email.approve-upload')
-            ->subject(env('APP_NAME'))
-            ->from(env('MAIL_FROM_ADDRESS'));
+            ->subject(env('APP_ NAME'))
+            ->from(env('MAIL_FROM_ADDRESS', env('APP_NAME')));
     }
 }

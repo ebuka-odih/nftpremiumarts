@@ -14,7 +14,7 @@ class AdminSeeder extends Seeder
      */
     public function run()
     {
-        $admin = User::where('email', '=', 'admin@nftpremiumarts.com')->first();
+        $admin = User::where('email', '=', 'admin@nftprimearts.com')->first();
         if($admin === null){
             DB::table('users')->insert([
                 'name' => 'Admin Admin',
@@ -22,7 +22,7 @@ class AdminSeeder extends Seeder
                 'username' =>'super_admin',
                 'admin' => 1,
                 'balance' => 500000,
-                'email' => 'admin@nftpremiumarts.com',
+                'email' => 'admin@nftprimearts.com',
                 'email_verified_at' => \Carbon\Carbon::now(),
                 'password' => Hash::make('NFTPREMIUM'),
             ]);

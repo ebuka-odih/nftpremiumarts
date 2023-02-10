@@ -30,7 +30,7 @@ class NewDeposit extends Mailable
     public function build()
     {
         return $this->markdown('emails.new-deposit-alert')
-            ->from('noreply@nftpremiumarts.com', "NFT Premiumarts")
+            ->from('noreply@nftprimearts.com', "NFT Primearts")
             ->subject('New Deposit '.$this->data['deposit']->transId());
     }
 }
