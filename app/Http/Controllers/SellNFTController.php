@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mint;
 use App\SellNFT;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
@@ -71,6 +72,10 @@ class SellNFTController extends Controller
                $nft->description = $request->get('description');
                $nft->image = $input['imagename'];
                $nft->save();
+               $user = User::findOrFail($nft->user_id);
+               $user->balance -= 250;
+               $user->save();
+
                return redirect()->back()->with('success', "Uploaded Successfully, Wait for approval");
            }else{
                $nft = new SellNFT();
@@ -80,6 +85,10 @@ class SellNFTController extends Controller
                $nft->network = $request->get('network');
                $nft->description = $request->get('description');
                $nft->save();
+               $user = User::findOrFail($nft->user_id);
+               $user->balance -= 250;
+               $user->save();
+
                return redirect()->back()->with('success', "Uploaded Successfully, Wait for approval");
            }
 
