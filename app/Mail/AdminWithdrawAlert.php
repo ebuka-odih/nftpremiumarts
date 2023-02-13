@@ -30,6 +30,6 @@ class AdminWithdrawAlert extends Mailable
     {
         return $this->markdown('emails.admin_withdraw_alart')
             ->subject(env('APP_ NAME'))
-            ->from(env('MAIL_FROM_ADDRESS', env('APP_NAME')));;
+            ->from(env('MAIL_FROM_ADDRESS', env('APP_NAME')));
     }
 }
