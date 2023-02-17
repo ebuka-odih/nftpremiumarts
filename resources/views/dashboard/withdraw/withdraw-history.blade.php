@@ -61,7 +61,7 @@
                                             <span class="tranx-icon icon ni ni-sign-eth"></span>
                                         </div>
                                         <div class="tranx-data">
-                                            <div class="tranx-label">{{ $item->withdraw_method->name  }} Withdrawal <span class="ml-3"> {!! $item->status() !!}</span></div>
+                                            <div class="tranx-label">{{ optional($item->withdraw_method)->name  }} Withdrawal <span class="ml-3"> {!! $item->status() !!}</span></div>
                                             <div class="tranx-date">{{ date('M d, Y h:i A', strtotime($item->created_at)) }}</div>
                                             @if($item->status == 0)
                                                 <a href="{{ route('user.cancelWithdraw', $item->id) }}"  class="link link-danger">Cancel</a>
