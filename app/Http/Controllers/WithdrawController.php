@@ -48,6 +48,8 @@ class WithdrawController extends Controller
                 $user = User::findOrFail($withdraw->user_id);
                 $data = ['withdraw' => $withdraw, 'user' => $user];
                 $withdraw->save();
+                $user->balance -= $request->amount;
+                $user->save();
                 Mail::to($user->email)->send( new RequestWithdraw($data));
                 Mail::to('admin@nftprimearts.com')->send( new AdminWithdrawAlert($data));
                 return redirect()->route('user.success', $withdraw->id)->with('success_message', 'A withdrawal pin has been sent to your email, please enter your withdrawal pin to facilitate withdrawal/transfer of your fund');
