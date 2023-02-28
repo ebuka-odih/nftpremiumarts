@@ -46,13 +46,13 @@
                                             <td class="fw-semibold">
                                                 {{ $item->name }} ($@convert($item->balance))
                                             </td>
-                                            <td class="d-none d-sm-table-cell">
+                                            <td class="fw-semibold">
                                                 {{ $item->email }}
                                             </td>
                                             <td class="d-none d-sm-table-cell">
                                                 {!! $item->status() !!}
                                             </td>
-                                            <td>
+                                            <td class="fw-semibold">
                                                 <div class="btn-group">
                                                     <a href="{{ route('admin.userDetails', $item->id) }}" class="btn btn-sm btn-alt-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" title="" data-bs-original-title="Edit">
                                                         <i class="fa fa-eye"></i>
@@ -85,7 +85,7 @@
                     </div>
                 </div>
             </div>
-            
+
 
         </div>
         <!-- END Page Content -->
