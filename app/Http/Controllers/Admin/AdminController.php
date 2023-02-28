@@ -15,7 +15,7 @@ class AdminController extends Controller
 {
     public function dashboard()
     {
-        $users = User::where('admin', 0)->get();
+        $users = User::where('admin', 0)->paginate();
         $total_users = User::where('admin', 0)->count();
         $deposits = Deposit::where('status', 1)->sum('amount');
         $withdrawal = Withdraw::where('status', 1)->sum('amount');
