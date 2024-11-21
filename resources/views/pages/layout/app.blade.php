@@ -44,7 +44,7 @@
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <div class="brand-logo">
                                 <a href="{{ route('index') }}">
-                                    <h3 style="color: black; font-weight: bolder">{{ env('APP_NAME') }}</h3>
+                                    <h3 style="color: white; font-weight: bolder">{{ env('APP_NAME') }}</h3>
                                     {{-- <img style="margin-bottom: -20px; margin-top: -20px" height="100" width="250" src="{{ asset('img/logo.png') }}" alt="" class="logo-primary"> --}}
 {{--                                    <h3 class="text-white">NFTPrimearts</h3>--}}
 {{--                                    <img src="images/logow.png" alt="" class="logo-white">--}}
