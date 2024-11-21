@@ -44,7 +44,8 @@
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <div class="brand-logo">
                                 <a href="{{ route('index') }}">
-                                    <img style="margin-bottom: -20px; margin-top: -20px" height="100" width="250" src="{{ asset('img/logo.png') }}" alt="" class="logo-primary">
+                                    <h3 style="color: black; font-weight: bolder">{{ env('APP_NAME') }}</h3>
+                                    {{-- <img style="margin-bottom: -20px; margin-top: -20px" height="100" width="250" src="{{ asset('img/logo.png') }}" alt="" class="logo-primary"> --}}
 {{--                                    <h3 class="text-white">NFTPrimearts</h3>--}}
 {{--                                    <img src="images/logow.png" alt="" class="logo-white">--}}
                                 </a>
@@ -94,7 +95,8 @@
             <div class="row">
                 <div class="col-xl-4 col-lg-4 col-md-7 col-sm-8">
                     <div class="bottom-logo">
-                        <img height="120" width="120" src="img2/logo.png" alt="" class="logo-primary">
+                        <h3 style="color: white; font-weight: bolder">{{ env('APP_NAME') }}</h3>
+                        {{-- <img height="120" width="120" src="img2/logo.png" alt="" class="logo-primary"> --}}
 
                         {{--                    <img class="pb-3" src="images/logoh.png" alt="">--}}
 {{--                        <h3 class="pb-3 text-white">NFTPrimearts</h3>--}}
@@ -146,7 +148,7 @@
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                     <div class="copyright">
-                        <p class="text-white">© Copyright 2022 <a href="#" class="text-white">NFTPrimearts</a> <!-- -->All Rights Reserved</p>
+                        <p class="text-white">© Copyright 2024 <a href="#" class="text-white">NFTPrimearts</a> <!-- -->All Rights Reserved</p>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
@@ -177,16 +179,7 @@
 <script src="{{ asset('js/scripts.js') }}"></script>
 
 <!-- Smartsupp Live Chat script -->
-<script type="text/javascript">
-    var _smartsupp = _smartsupp || {};
-    _smartsupp.key = '5f634aa75266b606d398d56a6c6dab7e03fb282a';
-    window.smartsupp||(function(d) {
-        var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-        s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-        c.type='text/javascript';c.charset='utf-8';c.async=true;
-        c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-    })(document);
-</script>
+
 
 </body>
 

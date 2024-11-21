@@ -26,7 +26,8 @@
             <div class="col-xl-5 col-md-6">
                 <div class="mini-logo text-center my-4">
                     <a href="{{ route('index') }}">
-                        <img style="margin-bottom: -30px; margin-top: -20px" height="120" width="250" src="{{ asset('img/logo.png') }}" alt="" class="logo-primary">
+                        <h3 style="color: white; font-weight: bolder">{{ env('APP_NAME') }}</h3>
+                        {{-- <img style="margin-bottom: -30px; margin-top: -20px" height="120" width="250" src="{{ asset('img/logo.png') }}" alt="" class="logo-primary"> --}}
 
                     </a>
                     <h4 class="card-title mt-5">Sign up to NFTPremiumarts</h4>
